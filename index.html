@@ -12,101 +12,163 @@ EMAIL: jmvigil1@uci.edu
   <meta name="description" content="Welcome to my Portfolio!">
   <meta name = "viewport" content="width=device-width, initial-scale=1">
   <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="css/portfoliostylesheet.css">
-  <title>Jose Vigil's Portfolio - Home Page</title>
+  <title>Jose Vigil's Portfolio - Home</title>
 </head>
+
 <body>
 
 
   <!--Navbar-->
 
-  <nav class = "navbar navbar-expand-lg">
+  <nav class = "navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Jose Manuel Vigil</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class = "navbar-nav"></ul>
+        <ul class = "navbar-nav ms-auto">
+          <li class = "nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="AboutMe.html">About Me</a>
+          </li>
+          <li class = "nav-item">
+            <a class = "nav-link" href="Files/JoseVigil-ProfessionalResumeDownloadable.pdf" 
+            target="_blank"
+            aria-label="Open PDF in new tab">
+            Resume
+          </a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
 
   <!--Begin Header/Beginning of Portoflio (Description and Me)-->
-
-  <div class = "container text-center">
-    <div class="row">
-      <div class = "col-12 col-lg-4">
-        <img src="Images/UserPlaceHolder.png" alt="User Image Placeholder">
-      </div>
-      <div class = "col-12 col-lg-8">
-        <h2>Hi, I'm Jose Manuel Vigil</h2>
-        <h4>UI|UX Designer</h4>
+  <section>
+    <div class = "container text-center">
+      <div class="row">
+        <div class = "col-12 col-md-8 order-2 order-md-1">
+          <h2>Hi, I'm Jose Manuel Vigil</h2>
+          <h3>UI|UX Designer</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. 
+            In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. 
+            Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. 
+            Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+          </p>
+        </div>
+        <div class = "col-12 col-md-4 order-1 order-md-2">
+          <img src="Images/UserPlaceHolder.png" class="img-fluid" alt="User Image Placeholder" id="UserImg" >
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!--About Me Section-->
-  <div class = "container">
-    <div class="row">
-      <aside class = "col-12 col-lg-4">
-        <h4>Contact Me</h4>
-        <ul>
-          <li>Email: <a href="mailto:josevigil298@gmail.com">josevigil298@gmail.com</a></li>
-          <li>Phone: <a href="tel:3235343764">(323) 534-3764</a></li>
-          <li>LinkedIn: <a href="www.linkedin.com/in/josevigil298">www.linkedin.com/in/josevigil298</a></li>
-          <li>Resume: <a href="Files/Jose Vigil - Professional Resume Downloadable.pdf" target="_blank">My Resume</a></li>
-        </ul>
-      </aside>
-      <div class = "col-12 col-lg-8">
-        <h1>About Me</h1>
-        <p class = "body-text">Hey! I am Jose M. Vigil, a First-Generation university student
-          and soon to be graduate, interested in creating and designing technologies that have meaningful impacts
-          on users. My primary focus is in the area of UX Research, which involves understanding and researching
-          who exactly I am creating technology for. I enjoy conducting user research, user interviews, and usability testing
-          whilst creating the best user-centered technologies. Though I am still refining my skills as a UI designer I still 
-          enjoy taking all the information I gather through these UX methodologies and strategies and creating strong functional 
-          designs that users will enjoy.
-        </p>
+  <section>
+    <div class = "container">
+      <div class="row">
+        <aside class = "col-12 col-md-4" id="SideBar-Info">
+          <h4>Contact Me</h4>
+          <ul class = "contact-list">
+            <li>
+              <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+              <a href="mailto:josevigil298@gmail.com" alt = "Jose Vigil's Email Address">josevigil298@gmail.com</a>
+            </li>
+            <li>
+              <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+              <a href="tel:3235343764" alt="Jose Vigil's Phone Number">(323) 534-3764</a>
+            </li>
+            <li>
+              <i class="bi bi-linkedin" aria-hidden="true"></i>
+              <a href="https://www.linkedin.com/in/josevigil298" alt="Link to Jose Vigil's LinkedIn">linkedin.com/in/josevigil298</a>
+            </li>
+            <li>
+              <i class="bi bi-file-earmark-arrow-down-fill" aria-hidden="true"></i>
+              <a href="Files/JoseVigil-ProfessionalResumeDownloadable.pdf" target="_blank" alt="Jose Vigil's Downloadable Resume">My Resume</a>
+            </li>
+          </ul>
+        </aside>
+        <div class = "col-12 col-md-8">
+          <h1>About Me</h1>
+          <p class = "body-text">Hey! I am Jose M. Vigil, a First-Generation university student
+            and soon to be graduate, interested in creating and designing technologies that have meaningful impacts
+            on users. My primary focus is in the area of UX Research, which involves understanding and researching
+            who exactly I am creating technology for. I enjoy conducting user research, user interviews, and usability testing
+            whilst creating the best user-centered technologies. Though I am still refining my skills as a UI designer I still 
+            enjoy taking all the information I gather through these UX methodologies and strategies and creating strong functional 
+            designs that users will enjoy.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!--Project Section-->
-  <div class = "container">
-  <h1>Projects</h1>
-  <div class="row">
-    <div class="row">
-      <div class="col-12 col-lg-4">
-        <a href="https://www.linkedin.com/company/altruaicompany/posts/?feedView=all" target="_blank"> <img src="Images/altruaicompany_logo.jpeg" alt="Altru.AI Company Logo"> </a>
+  <section>
+    <div class = "container">
+      <h1>Projects</h1>
+      <div class="row">
+
+        <div class="row project">
+          <div class="col-12 col-md-4" id="AltruLogo">
+            <a href="https://www.linkedin.com/company/altruaicompany/posts/?feedView=all" target="_blank"> 
+              <img src="Images/altruaicompany_logo.jpeg" class = "project-imgs d-none d-md-block" alt="Altru.AI Company Logo">
+             </a>
+          </div>
+          <div class="col-12 col-md-8">
+            <h2>Altru.AI - <span class="project-type">Course Project</span></h2>
+            <p class = "body-text">I collaborated with assigned partners on the development of a new LLM designed to assist students and individuals with college applications and the admissions process.
+              I also focused on the user interface and functionality of Altru AI, specifically the ‘Profile Builder,’ which allowed users to input academic and personal details to help the LLM assist with college admission questionnaires and applications.
+              Additionally, I researched and evaluated APIs to facilitate the collection of relevant academic data and university information.
+            </p>
+          </div>
+        </div>
+
+        <div class = "row project">
+          <div class = "col-12 col-md-8">
+            <h2>BetterBelli - <span class="project-type">Course Project</span></h2>
+            <p class = "body-text">
+              I designed and created a Prototype application focused on dietary restrictions, allowing users to navigate dining options safely, reducing health risks and providing peace of mind for those with unique dietary restrictions.
+              This involved conducting competitive analysis to pinpoint the positives and negatives of similar applications that would help with our creation and design of BetterBelli.
+              I utilized Figma to create low and high-fidelity prototypes of BetterBelli which were used for usability testing and overall functionality testing.
+            </p>
+          </div>
+          <div class = "col-12 col-md-4">
+            <a href = "https://sites.google.com/uci.edu/jpbat-portfolio/our-projects/in4matx-132-case-study?authuser=0" target="_blank">
+              <img src = "Images/BetterBelli.png" class = "project-imgs d-none d-md-block" alt = "BetterBelli Project Image displaying 3 different Front-End Design Mock-Ups">
+            </a>
+          </div>
+        </div>
+
+        <div class="row project">
+            <div class = "col-md-4">
+              <a href="https://sites.google.com/d/1T4PtGwVF5H_6QmWJpxFkryLQOzNjdogZ/p/1nAhx6XOPGLPyvIotlOmiTMyp8w4wR9Gy/edit" target="_blank">
+                <img src ="Images/MyLearningCoach.png" class = "project-imgs d-none d-md-block" alt="Prenostik - My Learning Coach Logo">
+              </a>
+            </div>
+            <div class = "col-12 col-md-8">
+              <h2>Prenostik's My Learning Coach - <span class="project-type">Course Project</span></h2>
+              <p>
+                I collaborated with a partner to develop a web application that helps students understand their academic performance in relation to motivation and mindset.
+                I designed front-end user interfaces in Figma, including webpages, widgets, and data visualizations for both student and instructor views.
+                We implemented interactive and responsive interfaces using React and TypeScript, translating Figma designs into fully functional student and instructor pages.
+              </p>
+            </div>
+        </div>
+
       </div>
-      <div class="col-12 col-lg-8">
-        <h2>Altru.AI - <h3>Course Project</h3></h2>
-        <p class = "body-text">I collaborated with assigned partners on the development of a new LLM designed to assist students and individuals with college applications and the admissions process.
-          I also focused on the user interface and functionality of Altru AI, specifically the ‘Profile Builder,’ which allowed users to input academic and personal details to help the LLM assist with college admission questionnaires and applications.
-          Additionally, I researched and evaluated APIs to facilitate the collection of relevant academic data and university information.
-        </p>
-      </div>
+
     </div>
-    <div class = "row">
-      <div class = "col-12 col-lg-8">
-        <h2>BetterBelli - <h3>Course Project</h3></h2>
-        <p class = "body-text">
-          I designed and created a Prototype application focused on dietary restrictions, allowing users to navigate dining options safely, reducing health risks and providing peace of mind for those with unique dietary restrictions.
-          This involved conducting competitive analysis to pinpoint the positives and negatives of similar applications that would help with our creation and design of BetterBelli.
-          I utilized Figma to create low and high-fidelity prototypes of BetterBelli which were used for usability testing and overall functionality testing.
-        </p>
-      </div>
-      <div class = "col-12 col-lg-4">
-        <img src = "Images/BetterBelli.png" alt = "BetterBelli Project Image">
-      </div>
-    </div>
-
-
-  </div>
-
+  </section>
   
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
+
 </html>
